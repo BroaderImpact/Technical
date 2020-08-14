@@ -1,4 +1,5 @@
 {
     "python.dataScience.jupyterServerURI": "local",
-    "python.pythonPath": "c:\\Program Files\\Python\\Python38-32\\python.exe"
+    "python.pythonPath": "c:\\Program Files\\Python\\Python38-32\\python.exe",
+    "python.formatting.provider": "black"
 }

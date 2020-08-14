@@ -6,6 +6,8 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import seaborn as sb
 cfd = pd.read_csv("C:\Users\Christine\Google Drive - c.amuzie\Applications\CWA\cfd.csv")
+cfd.head(5)
+
 # ● Please provide us with the code for the script that opens the included text file and
 # ● does the following:
 # ○ Converts the delimiter from comma (“,”) to tab.

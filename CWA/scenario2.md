@@ -17,6 +17,12 @@
 #### Groups of Skills and Skills columns constructed together
 =CHOOSE(RANDBETWEEN(1,10),Strings!$G$2:$H$2,Strings!$G$3:$H$3,Strings!$G$4:$H$4,Strings!$G$5:$H$5,Strings!$G$6:$H$6,Strings!$G$7:$H$7,Strings!$G$8:$H$8,Strings!$G$9:$H$9,Strings!$G$10:$H$10,Strings!$G$11:$H$11)
 
-### STEP 2: Reviewing and visualizing data in Tableau
+### STEP 2: Data munging and cleaning
 
-### STEP 3
+### STEP 3: Reviewing and visualizing data in Tableau
+
+### STEP 4: Modeling
+
+### STEP 5: Scaling
+
+### STEP 6: Reporting

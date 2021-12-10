@@ -140,3 +140,10 @@ dmypy.json
 
 # Windows
 Thumbs.db
+
+# Data Files
+.csv
+.xlsx
+.xls
+.doc
+.docx

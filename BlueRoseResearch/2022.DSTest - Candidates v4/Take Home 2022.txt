@@ -1,0 +1,26 @@
+# Take Home Modeling Exam
+## Instructions
+The goal of this exam is to gain some understanding about how you approach modeling problems. There are two sections - modeling and open response. In the ‘modeling’ section, we’d like you to build two separate models on the same dataset and compare their performance to one another. In the open response we’ll ask more open ended questions to gain some understanding as to how you might extend your analysis given more time and resources.
+
+We’re not looking to grade your exam based on model performance metrics, so don’t spend too much time trying to improve the performance in some incremental sense. Rather, we’re trying to get some understanding of your thought process, if the choices you are making are reasonable, and to the extent you have to make simplifications, how much you’re able to specify what a more reasonable analysis would look like given the time.
+
+We're expecting the output to be in a jupyter notebook or some similar technology that allows you to share your thoughts (as well as links, data visualization, whatever you think makes your point best) alongside your code. If you send a jupyter notebook, please also send a html file to improve accessibility. While code readability is a plus, don't agonize over formatting and cleaning things up. Imagine this is a data exploration that you'd share with a colleague, not a final presentation to clients. This take home exam is designed to be completed in about 3 hours. Please do not spend any more than 6 hours on this exam. We'd like you to send this back to us in 72 hours. If that doesn't work for you, please shoot us an email to let us know and we'll find another way to accommodate your schedule (we mean this!). When you're finished, email a copy of the finished product to paul@openlabsusa.org and lauren@openlabsusa.org.
+
+## Modeling
+
+We’ve provided a (synthetic) dataset about a job training program offered to recently incarcerated people with a high school degree in California. The file ol_takehome_exam_2022_training.csv contains data for a sample of program participants for which the outcome of interest is known. The outcome variable is a binary variable which indicates whether they were offered a job at the end of the program. Features include their GPA, which high school they went to, and other masked attributes.
+
+We have also provided a scoring set (ol_takehome_exam_2022_scoring.csv) consisting of features for the entire population that has participated in the program, without the outcome variable.
+
+There are three tasks here. 
+(1) Transform the data so that it can be modeled, stating assumptions and simplifications as you go. What can you notice about the data ahead of the modeling process?
+(2) Train 2 or 3 models, and compare them in terms of how well they fit the data. Are there
+advantages or disadvantages to the approaches you’ve taken?
+(3) Choose the best model you fit above and produce scores for every row the provided scoring set. Compare the distribution of population scores to the training sample mean and briefly discuss your findings. What do you observe about the two populations? How might you change your analysis if you had more time/resources in light of this?
+
+## Open Ended Questions
+Please provide answers to the following questions. To the extent you rely on standard terminology, please provide an explanation in your own words tailored to someone technical but unfamiliar with the topic. Example: A p-value is a measure of….
+(1) Let’s say a client comes to you and asks for “the effect of absences (one of the variables in the dataset) on being offered a job.” What are some ways you might go about providing that? How would you communicate uncertainty around the ‘effect size’?
+(2) Let's say your client is interested in understanding the uncertainty of the predictions produced by your model at the individual level. As an example, your model might say that person i has probability of being offered a job 0.78. How do you calculate uncertainty on that quantity?
+(3) Let’s say a domain expert thinks that the model is not performing well for a subset of the population (e.g. folks with a low GPA). How would you check to see if the model is performing well among subpopulations of your training data?
+

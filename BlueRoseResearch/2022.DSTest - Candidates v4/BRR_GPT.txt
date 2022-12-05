@@ -93,12 +93,10 @@ print("Decision tree accuracy:", dt_acc)
 From the results, it appears that the logistic regression model has higher accuracy than the decision tree model. This suggests that the logistic regression model is a better fit for the data.
 
 
+(1) To provide the effect of absences on being offered a job, one approach could be to run a regression analysis with the outcome variable (being offered a job) as the dependent variable and absences as the independent variable. This would provide a coefficient for absences, which represents the effect on the outcome variable for each unit increase in absences. Alternatively, we could also calculate the correlation between absences and the outcome variable to determine the strength of the relationship.
 
-Try again
+To communicate uncertainty around the effect size, we could report the standard error or confidence interval of the coefficient or correlation. This would provide a range of values within which the true effect size is likely to fall, taking into account the sample size and variability of the data.
 
-Free Research Preview: ChatGPT is optimized for dialogue. Our goal is to make AI systems more natural to interact with, and your feedback will help us improve our systems and make them safer.
-Reset Thread
-Dark Mode
-OpenAI Discord
-Learn More
-Log out
+(2) To calculate uncertainty on the probability of being offered a job for an individual, we could use a method such as bootstrapping. This involves resampling the data multiple times with replacement and re-fitting the model on each resampled dataset. We could then use the distribution of predicted probabilities from the resampled datasets to calculate the uncertainty around the predicted probability for the individual.
+
+(3) To check if the model is performing well among subpopulations of the training data, we could stratify the data by the subpopulation of interest (e.g. low GPA) and evaluate the model performance within each subpopulation. This could be done by calculating metrics such as precision, recall, and accuracy for each subpopulation, and comparing them to the overall performance on the entire training dataset. If there is a significant difference in performance between the subpopulation and the overall dataset, it could indicate that the model is not performing well for that subpopulation.

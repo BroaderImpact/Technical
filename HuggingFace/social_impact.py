@@ -21,6 +21,5 @@ input_ids = tokenizer.convert_tokens_to_ids(tokens)
 
 # Unmask the 6th token
 outputs = model(input_ids)[0]
-predicted_token = tokenizer.decode(torch.argmax(outputs[0, 5]).item())
-
+predicted_token = tokenizer.decode([torch.argmax(outputs[0, 5]).item()])
 print("The most probable predicted token is:", predicted_token)

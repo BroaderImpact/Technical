@@ -1,6 +1,22 @@
+import numpy as np
 import pandas as pd
+from ydata_profiling import ProfileReport
 import torch
 from transformers import BertTokenizer, BertModel
+
+
+# Syntax of read_table()
+pd.read_table(filepath_or_buffer, sep=NoDefault.no_default, delimiter=None, header='infer', names=NoDefault.no_default, index_col=None, usecols=None, squeeze=None, prefix=NoDefault.no_default, mangle_dupe_cols=True, dtype=None, engine=None, converters=None, true_values=None, false_values=None, skipinitialspace=False, skiprows=None, skipfooter=0, nrows=None, na_values=None, keep_default_na=True, na_filter=True, verbose=False, skip_blank_lines=True, parse_dates=False, infer_datetime_format=False, keep_date_col=False, date_parser=None, dayfirst=False, cache_dates=True, iterator=False, chunksize=None, compression='infer', thousands=None, decimal='.', lineterminator=None, quotechar='"', quoting=0, doublequote=True, escapechar=None, comment=None, encoding=None, encoding_errors='strict', dialect=None, error_bad_lines=None, warn_bad_lines=None, on_bad_lines=None, delim_whitespace=False, low_memory=True, memory_map=False, float_precision=None, storage_options=None)
+
+
+# Read TSV file into DataFrame
+df = pd.read_table('courses.tsv')
+print(df)
+
+# columns: uniqueID, drugName, review, date
+
+# EDA: ydata-profiling
+profile = ProfileReport(df, title="Pandas Profiling Report")
 
 # Load pre-trained BERT model and tokenizer
 model_name = 'bert-base-uncased'

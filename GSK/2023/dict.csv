@@ -1,0 +1,20 @@
+,Unnamed: 0,Unnamed: 1,Unnamed: 2
+0,This data consists of real patient reviews submitted to webMD from 2007 - 2020. This is a subset of a public dataset which can be found at https://www.kaggle.com/datasets/rohanharode07/webmd-drug-reviews-dataset ,,
+1,,,
+2,TABLE,DESCRIPTION,RECORD COUNT
+3,RHEUMATOID_ARTHRITIS,A collection of drug reviews from patients being treated for Rheumatoid Arthritis,185
+4,SLE,A collection of drug reviews from patients being treated for Systemic Lupus Erythematosus,537
+5,COPD,A collection of drug reviews from patients being treated for Chronic Obstructive Pulmonary Disease,735
+6,,,
+7,FIELD,TYPE,DESCRIPTION
+8,Age,categorical,"Age range of patient. Possible values: 0-2, 3-6, 7-12, 13-18, 19-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75 or over"
+9,Condition,categorical,A description of the disease/condition the patient was using the drug to treat
+10,Date,date,The date of the review. Sept 2007- March 2020
+11,Drug,categorical,The name of the drug being reviewed
+12,DrugId,numerical,The id number of the drug being reviewed
+13,EaseofUse,numerical,A rating from the patient on the ease of use of the drug. Range 1 - 5 where 5 is best and 1 is worst
+14,Effectiveness,numerical,A rating from the patient on the effectiveness of the drug. Range 1 - 5 where 5 is best and 1 is worst
+15,Reviews,text,
+16,Satisfaction,numerical,A rating from the patient on thir overall satisfaction with the drug. Range 1 - 5 where 5 is best and 1 is worst
+17,Sex,categorical,"The biological sex of the patient. Possible values: Male, Female. Can be left blank."
+18,Sides,text,A list of known side effects associated with the drug
